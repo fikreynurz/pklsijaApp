@@ -1,0 +1,73 @@
+POST http://localhost:3000/lembur/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MTQyZWMyZjFhNGJlYjQ1ZmQ3ODc2MjYiLCJpYXQiOjE2MzE3NzU3OTR9.B8koiV60BP0S2DOQ2p7f4vxBUphH6Q9OxdUIkbizKlk
+content-type: application/json
+
+{
+    "assigner": "6142ebdf1a4beb45fd787621",
+    "reasons": "Fixing Bugs",
+    "time": "2021-09-16",
+    "startTime": "2021-09-16T10:00:00.000Z",
+    "endTime": "2021-09-16T13:00:00.000Z"
+}
+
+###
+
+GET http://localhost:3000/lembur/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json
+
+###
+
+PATCH  http://localhost:3000/lembur/61417aa7383384acdf2103fb
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json
+
+ [{"propName":"reasons", "value":"Testing App"}]
+
+
+###
+
+DELETE  http://localhost:3000/lembur/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/user/signin
+Content-Type: application/json
+
+{
+    "email": "fikreynursyabani@gmail.com",
+    "password": "fikri123"
+}
+
+###
+
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "username": "Muhammad Fikri Nur Sya'bani",
+    "email": "fikreynursyabani@gmail.com",
+    "password": "fikri123"
+}
+
+###
+
+GET http://localhost:3000/user/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json
+
+###
+
+DELETE  http://localhost:3000/user/6142ce722f84511144bd32c1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json
+
+
+###
+
+
+GET http://localhost:3000/user/manager
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmFnZXJAZ21haWwuY29tIiwiaWQiOiI2MTNlYjJjOWY0MGQ0ZDRlY2MzY2YxY2EiLCJpYXQiOjE2MzE2OTc0MTF9.lr0nEG0yo9MyaBdovRC_Kv9rnpwLkQJCXHfABzGvFaw
+Content-Type: application/json

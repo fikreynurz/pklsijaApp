@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "pklsijadb",
+        "JWT_KEY": "pklsijadb"
+    }
+}
